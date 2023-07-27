@@ -30,9 +30,9 @@ data "template_file" "argocd_install" {
 resource "null_resource" "ArgoCD" {
 
   #Trigger when the yaml file changes
-  triggers = {
-    yaml_sha_install  = "${sha256(file("${local.install_script}"))}"
-  }
+  # triggers = {
+  #   yaml_sha_install  = "${sha256(file("${local.install_script}"))}"
+  # }
 
   # download kubectl
   provisioner "local-exec" {
