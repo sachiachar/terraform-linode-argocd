@@ -5,3 +5,4 @@ locals {
   kubeconf_path = "${local.root_dir}/.kube/kubeconfig.yaml"
   install_script = "https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml"
 }
+
